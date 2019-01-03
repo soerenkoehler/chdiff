@@ -19,7 +19,7 @@ ChDiff - a checksum based diff and backup tool
 EPILOG = """
 -----------------------------------------------
 https://github.com/soerenkoehler/checksum-diff/
-Build 2019-01-02 22:49:08
+Build 2019-01-03 01:24:14
 (requires Python 3.6+)
 """
 
