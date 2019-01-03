@@ -164,7 +164,7 @@ def load_previous(sub_target):
 def get_diff(dir1, dir2):
     if process_directories([dir1, dir2], create_checksum):
         diff = get_checksum_diff(load_checksums(dir1), load_checksums(dir2))
-        for (path, change) in get_timestamp_diff(dircmp(dir1, dir2)).items():
+        for (path, change) in get_timestamp_diff(dircmp(str(dir1), str(dir2))).items():
             if ARGS.timestamps:
                 if path in diff:
                     diff[path] = change + [diff[path]]
