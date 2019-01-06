@@ -19,7 +19,7 @@ ChDiff - a checksum based diff and backup tool
 EPILOG = """
 -----------------------------------------------
 https://github.com/soerenkoehler/checksum-diff/
-Build 2019-01-03 01:24:14
+Build SNAPSHOT
 (requires Python 3.6+)
 """
 
@@ -268,11 +268,7 @@ def report_diff(diff, parent=Path()):
 def log(text, path=None, level=1):
     if level > ARGS.quiet:
         if path:
-            # try-except-clause for compatibility with Python 3.5
-            try:
-                resolved_path = path.resolve()
-            except FileNotFoundError:
-                resolved_path = path
+            resolved_path = path.resolve()
             text = "{} : {}".format(text, path_to_str(resolved_path))
         print("[{}] {}".format(now_for_log(), text), flush=True)
 
