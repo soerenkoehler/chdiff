@@ -8,7 +8,8 @@ A Checksum Based Diff and Backup Tool
 
 With increasing data volume distributed over a number of hard drives I needed
 something to compare folders as well across space as also across time. The
-first can be done comfortably with any existing diff tool. I prefer [KDiff](http://kdiff3.sourceforge.net/), for it is cross platform and can do
+first can be done comfortably with any existing diff tool. I prefer
+[KDiff](http://kdiff3.sourceforge.net/), for it is cross platform and can do
 3-way-compare.
 
 For the comparison over time I hacked together some bash scripts using `find`
@@ -60,7 +61,7 @@ The method can be changed via the `-m` option.
 - Beware that this option is case sensitiv.
 - The default method is `sha256`.
 - The method `size` is provided for quick diffs. It uses the file size
-as a simple hash.
+  as a simple hash.
 
 #### verify (alias: v) ####
 
