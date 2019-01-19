@@ -29,6 +29,11 @@ From this I developed the requirements for ChDiff:
 - Compare a source directory against a backup folder structure and create
   incremental backups.
 
+### Installation ###
+
+Just copy the file `chdiff.py` from the repository or the downloaded archive
+to an appropriate location in your `$PATH`.
+
 ### Usage ###
 
 #### create (alias: c) ####
