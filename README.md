@@ -61,7 +61,7 @@ The method can be changed via the `-m` option.
 - Beware that this option is case sensitiv.
 - The default method is `sha256`.
 - The method `size` is provided for quick diffs. It uses the file size
-as a simple hash.
+  as a simple hash.
 
 #### verify (alias: v) ####
 
