@@ -8,7 +8,7 @@ A Checksum Based Diff and Backup Tool
 
 With increasing data volume distributed over a number of hard drives I needed
 something to compare folders as well across space as also across time. The
-first can be done comfortably with any existing diff tool. I prefer
+first can be done comfortably with any existing diff tool. I prefer 
 [KDiff](http://kdiff3.sourceforge.net/), for it is cross platform and can do
 3-way-compare.
 
@@ -97,8 +97,8 @@ If you are interested in files with equal content but different time stamps,
 use the `-t` option. All other options are the same as with `create` and
 `verify`.
 
-**Warning!** `diff` is comparion across space. It will overwrite any existing
-hash file you may have kept for comparison across time.
+**Warning!** `diff` is comparison across space. It will ignore and overwrite
+any existing hash file you may have kept for comparison across time.
 
 #### backup (alias: b) ####
 
@@ -107,7 +107,7 @@ Still in beta. Use on your own risk ;)
 ### Requirements ###
 
 * The regular version of ChDiff requires Python 3.6 or later.
-* For Python 3.5 (which is the newest version on my Synology NAS) I'll maintain
-  a backport branch.
+* For Python 3.5 (which is the newest version on Debian9 as well as on my
+  Synology NAS) I'll maintain a backport branch.
 
 https://github.com/soerenkoehler/checksum-diff/
