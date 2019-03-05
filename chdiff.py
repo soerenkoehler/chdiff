@@ -249,8 +249,8 @@ def get_timestamp_diff(comparison, prefix=Path(".")):
     result = {}
     for file in comparison.common_files:
         if not (prefix == Path(".") and fnmatchcase(file, EXCLUDE_PATTERN)):
-            time_a = stat(Path(comparison.left) / file).st_mtime
-            time_b = stat(Path(comparison.right) / file).st_mtime
+            time_a = stat(str(Path(comparison.left) / file)).st_mtime
+            time_b = stat(str(Path(comparison.right) / file)).st_mtime
             if time_a != time_b:
                 result[str(prefix / file)] = [TARGET_NEWER if time_a < time_b
                                               else TARGET_OLDER]
