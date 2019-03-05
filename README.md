@@ -107,7 +107,7 @@ Still in beta. Use on your own risk ;)
 ### Requirements ###
 
 * The regular version of ChDiff requires Python 3.6 or later.
-* For Python 3.5 (which is the newest version on my Synology NAS) I'll maintain
-  a backport branch.
+* For Python 3.5 (which is the newest version on Debian9 as well as on my
+  Synology NAS) I'll maintain a backport branch.
 
 https://github.com/soerenkoehler/checksum-diff/
